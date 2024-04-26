@@ -28,9 +28,11 @@ export default {
 <style scoped>
 .main {
   width: 100%;
-  height: 100%;
-  background-image: url("../../assets/images/background1.png"); /* Используем префикс "~@" для пути к изображению */
-  background-size: cover; /* Масштабировать изображение по размеру блока */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../assets/images/background1.png");
+  background-size: cover;
 }
 .block{
     width: 80%;
@@ -39,12 +41,10 @@ export default {
 }
 .main_block{
   background-color: rgba(239, 239, 239, 0.4);
+  border-radius: 20px;
   width: 566px;
   height: 513px;
-
-  margin-top: 283px;
   horiz-align: center;
-
 }
 .logo{
   margin-top: 23px;
@@ -60,9 +60,12 @@ input::placeholder{
   font-family: Rubik-regular, system-ui;
 }
 .forgot{
+  margin-top: 10px;
+  font-family: Rubik-regular,system-ui;
   margin-left: 37px;
 }
 .login{
+  cursor: pointer;
   font-family: Rubik-bold,system-ui;
   width: 490px;
   height: 50px;
@@ -77,6 +80,7 @@ input::placeholder{
 }
 
 input{
+  padding-left: 14px;
   height: 50px;
   width: 490px;
   background-color: rgba(0, 0, 0, 0.1);

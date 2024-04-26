@@ -117,6 +117,7 @@ h1{
   color: white;
   width: 329px;
   height: 658px;
+  border-radius: 10px;
   background-color: #606060;
 }
 .item{

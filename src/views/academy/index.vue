@@ -1,9 +1,7 @@
 <template>
 
   <header-component />
-    <div class="header">
-    <img src="@/assets/images/fon.png">
-  </div>
+  <hero-top-component />
   <div style="background-color: black">
   <div class="main">
     <div class="search_block">
@@ -74,10 +72,12 @@ import DevsComponent from "@/components/home/devs.vue";
 import JoinClubComponent from "@/components/home/join_club.vue";
 import StreamComponent from "@/components/home/stream.vue";
 import FooterComponent from "@/components/home/footer.vue";
+import HeroTopComponent from "@/components/home/hero_top.vue";
 
 export default {
   name: "index",
   components: {
+    HeroTopComponent,
     FooterComponent,
     StreamComponent,
     JoinClubComponent, DevsComponent, ProductsComponent, AcademyAndCommunityComponent, HeaderComponent},
